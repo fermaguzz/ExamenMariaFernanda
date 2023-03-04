@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!-- Encabezado con fondo azul y letras blancas -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cinepolis Altama"
+    android:textColor="#FFFFFF"
+    android:background="#0000FF"
+    android:textSize="20sp"
+    android:gravity="center_horizontal"/>
+
+<!-- Carátula de la película y detalles a la derecha -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Carátula de la película -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/caratula_pelicula"/>
+
+    <!-- Detalles de la película a la derecha -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <!-- Título de la película -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciudad perdida"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+        <!-- Descripción de la película -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es una pelicula de sandra bullock"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Clasificacion A"
+            android:textAlignment="center" />
+
+        <!-- Datos de clasificación, duración y géneros -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Duración: 2h 30m"
+                android:textAlignment="center"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Géneros: Acción, Aventura"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:background="#0000FF"/>
+
+        </LinearLayout>
+
+        <!-- Spinner de horarios -->
+        <Spinner
+            android:id="@+id/horarios_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/horarios"/>
+
+        <!-- Botón de "Comprar boletos" -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar boletos"
+            android:textColor="#000000"
+            android:background="#FFFF00"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

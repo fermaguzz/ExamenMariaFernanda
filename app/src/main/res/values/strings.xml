@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ExamenMariaFernanda</string>
+
+    <string-array name="horarios">
+        <item>15:00 sub</item>
+        <item>16:00 esp</item>
+        <item>17:00 3D esp</item>
+        <item>18:00 sub</item>
+        <item>19:00 esp</item>
+        <item>20:00 3D esp</item>
+    </string-array>
+</resources>
+
+
